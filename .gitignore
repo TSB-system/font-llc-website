@@ -1,4 +1,8 @@
 .vercel
+
+# 社内向けドキュメント（架空のお客様の声・仮の料金など内部メモを含むため追跡しない）
+PROGRESS.md
+
 .DS_Store
 Thumbs.db
 node_modules/
