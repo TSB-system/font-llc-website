@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>スタイルガイド | 合同会社FONT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .sg-section { padding: var(--space-5) 0; border-bottom: 1px solid var(--color-line); }
+  .sg-swatches { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  .sg-swatch { width: 160px; }
+  .sg-chip { height: 80px; border-radius: var(--radius); border: 1px solid var(--color-line); margin-bottom: 6px; }
+  .sg-swatch code { font-size: 0.75rem; opacity: 0.7; }
+  .sg-type > * { margin-bottom: var(--space-3); }
+  .sg-buttons, .sg-badges { display: flex; gap: var(--space-2); flex-wrap: wrap; align-items: center; }
+  .sg-dark { background: var(--color-ink); color: var(--color-paper); padding: var(--space-4); border-radius: var(--radius); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="sg-section">
+    <p class="kicker">Style Guide</p>
+    <h1 style="font-size:2rem;font-weight:800;">合同会社FONT デザインスタイルガイド</h1>
+    <p class="page-lead">mockup.html の配色・フォント・余白を CSS変数として style.css に定義。以下で見え方を確認できます。</p>
+  </header>
+
+  <section class="sg-section">
+    <h2 style="margin-bottom:var(--space-3);">配色</h2>
+    <div class="sg-swatches">
+      <div class="sg-swatch"><div class="sg-chip" style="background:var(--color-ink);"></div><code>--color-ink</code></div>
+      <div class="sg-swatch"><div class="sg-chip" style="background:var(--color-paper);"></div><code>--color-paper</code></div>
+      <div class="sg-swatch"><div class="sg-chip" style="background:var(--color-paper-soft);"></div><code>--color-paper-soft</code></div>
+      <div class="sg-swatch"><div class="sg-chip" style="background:var(--color-teal);"></div><code>--color-teal</code></div>
+      <div class="sg-swatch"><div class="sg-chip" style="background:var(--color-teal-deep);"></div><code>--color-teal-deep</code></div>
+      <div class="sg-swatch"><div class="sg-chip" style="background:var(--color-teal-soft);"></div><code>--color-teal-soft</code></div>
+      <div class="sg-swatch"><div class="sg-chip" style="background:var(--color-pp-1);"></div><code>--color-pp-1</code></div>
+      <div class="sg-swatch"><div class="sg-chip" style="background:var(--color-pp-2);"></div><code>--color-pp-2</code></div>
+      <div class="sg-swatch"><div class="sg-chip" style="background:var(--color-pp-3);"></div><code>--color-pp-3</code></div>
+      <div class="sg-swatch"><div class="sg-chip" style="background:var(--color-pp-4);"></div><code>--color-pp-4</code></div>
+    </div>
+  </section>
+
+  <section class="sg-section">
+    <h2 style="margin-bottom:var(--space-3);">タイポグラフィ（丸ゴシック / M PLUS Rounded 1c）</h2>
+    <div class="sg-type">
+      <p class="hero-eyebrow" style="color:var(--color-teal-deep);">EYEBROW / KICKER TEXT</p>
+      <h1 style="font-size:var(--fs-hero);font-weight:800;">"らしさ"は、纏う祝福になる。</h1>
+      <h2 style="font-size:var(--fs-xxl);font-weight:800;">選ばれる、3つの理由。</h2>
+      <h3 style="font-size:var(--fs-lg);font-weight:700;">どこにもない感性で、可愛さも格好良さも。</h3>
+      <p style="font-size:var(--fs-base);max-width:60ch;">本文の見本です。パンチパンダは、テンションが上がるデザインを大切に。お客様の声を聞きながら「こんな商品が欲しい」を一つずつかたちにしています。丸ゴシックで親しみやすく、かつ大きめの余白で洗練された印象に仕上げます。</p>
+      <p style="font-size:var(--fs-sm);opacity:0.7;">補足テキストの見本（--fs-sm）</p>
+    </div>
+  </section>
+
+  <section class="sg-section">
+    <h2 style="margin-bottom:var(--space-3);">ボタン</h2>
+    <div class="sg-buttons">
+      <a class="btn btn-primary" href="#">btn-primary</a>
+      <a class="btn btn-outline" href="#">btn-outline</a>
+      <div class="sg-dark" style="padding:var(--space-3);"><a class="btn btn-outline-light" href="#">btn-outline-light</a></div>
+      <a class="cta-pill" href="#">cta-pill</a>
+    </div>
+  </section>
+
+  <section class="sg-section">
+    <h2 style="margin-bottom:var(--space-3);">ブランドバッジ</h2>
+    <div class="sg-badges">
+      <span class="badge pp">PUNCH PANDA / アパレル</span>
+      <span class="badge hana">HANAEMON / フラワーバルーン</span>
+    </div>
+  </section>
+
+  <section class="sg-section" style="border-bottom:none;">
+    <h2 style="margin-bottom:var(--space-3);">余白スケール</h2>
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <div style="display:flex;align-items:center;gap:12px;"><code style="width:90px;">space-1</code><div style="height:16px;background:var(--color-teal);width:var(--space-1);"></div></div>
+      <div style="display:flex;align-items:center;gap:12px;"><code style="width:90px;">space-2</code><div style="height:16px;background:var(--color-teal);width:var(--space-2);"></div></div>
+      <div style="display:flex;align-items:center;gap:12px;"><code style="width:90px;">space-3</code><div style="height:16px;background:var(--color-teal);width:var(--space-3);"></div></div>
+      <div style="display:flex;align-items:center;gap:12px;"><code style="width:90px;">space-4</code><div style="height:16px;background:var(--color-teal);width:var(--space-4);"></div></div>
+      <div style="display:flex;align-items:center;gap:12px;"><code style="width:90px;">space-5</code><div style="height:16px;background:var(--color-teal);width:var(--space-5);"></div></div>
+      <div style="display:flex;align-items:center;gap:12px;"><code style="width:90px;">space-6</code><div style="height:16px;background:var(--color-teal);width:var(--space-6);"></div></div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
