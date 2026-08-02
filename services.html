@@ -8,22 +8,22 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="事業内容・サービス｜合同会社FONT">
 <meta property="og:description" content="パンチパンダとHanaemon、ふたつのブランドのサービス内容をご紹介します。">
-<meta property="og:image" content="images/hero.jpg">
+<meta property="og:image" content="images/photo_1.webp">
 <link rel="icon" href="images/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-services">
 <a class="skip-link" href="#main">本文へスキップ</a>
 
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="index.html"><img src="images/logo.png" alt="合同会社FONT" width="36" height="36">合同会社 FONT</a>
-    <nav class="nav">
-      <button class="nav-toggle js-nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開閉する"><span></span></button>
+    <a class="logo" href="index.html">合同会社 <strong>FONT</strong></a>
+    <nav class="nav" aria-label="メインナビゲーション">
+      <button class="nav-toggle js-nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く"><span></span></button>
       <ul class="nav-list js-site-nav" id="site-nav">
         <li><a href="index.html">ホーム</a></li>
         <li><a href="about.html">会社概要</a></li>
@@ -35,15 +35,14 @@
       </ul>
     </nav>
     <div class="header-actions">
-      <a class="tel-link" href="tel:09099977222">090-9997-7222</a>
-      <a class="cta-pill" href="#contact">LINEで相談</a>
+      <a class="cta-pill" href="#contact">お問い合わせ</a>
     </div>
   </div>
 </header>
 
 <main id="main">
 
-  <section class="page-hero">
+  <section class="page-hero" data-page-index="02">
     <div class="wrap">
       <p class="hero-eyebrow">Services</p>
       <h1>事業内容・サービス</h1>
@@ -51,36 +50,38 @@
     </div>
   </section>
 
-  <section class="section wrap">
-    <div class="brand-grid">
-      <div class="brand-card" style="border-color:var(--color-line);background:var(--color-paper-soft);color:var(--color-ink);">
-        <div class="brand-photo pp">
-          <!-- images/works-01.webp（パンチパンダ商品カット）を配置 -->
-          <img src="images/works-01.webp" alt="パンチパンダのアパレルアイテム" loading="lazy" width="1100" height="688">
-        </div>
+  <section class="section wrap service-brands">
+    <div class="service-brand-list">
+      <article class="service-brand service-brand-punch" id="punch-panda">
+        <header class="service-brand-head"><span>01</span><small>SPORTS / STREET / APPAREL</small></header>
+        <div class="service-brand-name" aria-hidden="true">PUNCH<br>PANDA</div>
+        <div class="service-brand-copy">
         <span class="badge pp">PUNCH PANDA / アパレル</span>
         <h3>パンチパンダ</h3>
         <p>どこにもない感性で、可愛さも格好良さも詰め込んだアパレルブランド。買う人の意見を聞きながら「こんな商品が欲しい」をかたちにします。テンションが上がるデザインで、1人ずつの個性を大切に。</p>
-        <ul style="margin-top:var(--space-2);">
-          <li style="margin-bottom:8px;">・オリジナルデザインアパレル、グッズの企画製作</li>
-          <li style="margin-bottom:8px;">・成人式・卒業式向けオーダーグッズの制作</li>
-          <li style="margin-bottom:8px;">・お客様のご要望から生まれるオーダーメイド対応</li>
+        <ul class="service-list">
+          <li>オリジナルデザインアパレル、グッズの企画製作</li>
+          <li>成人式・卒業式向けオーダーグッズの制作</li>
+          <li>お客様のご要望から生まれるオーダーメイド対応</li>
         </ul>
-      </div>
-      <div class="brand-card" style="border-color:var(--color-line);background:var(--color-paper-soft);color:var(--color-ink);">
-        <div class="brand-photo hana">
-          <!-- images/works-02.webp（Hanaemonブーケカット）を配置 -->
-          <img src="images/works-02.webp" alt="Hanaemonのバルーンフラワーブーケ" loading="lazy" width="1100" height="688">
+        <a class="text-link" href="https://punchpanda88.official.ec/" target="_blank" rel="noopener">パンチパンダ公式EC</a>
         </div>
+      </article>
+      <article class="service-brand service-brand-hana" id="hanaemon">
+        <header class="service-brand-head"><span>02</span><small>FLOWER BALLOON / GIFT</small></header>
+        <div class="service-brand-copy">
         <span class="badge hana">HANAEMON / フラワーバルーン</span>
         <h3>Hanaemon</h3>
         <p>贈る人の気持ちを存分に聞き取り、イメージをかたちに変えるフラワーバルーンブランド。贈る人、贈られる人、作る人、みんながワクワク・キラキラ・ドキドキを感じられるように仕上げます。</p>
-        <ul style="margin-top:var(--space-2);">
-          <li style="margin-bottom:8px;">・成人式・卒業式向けバルーンフラワーのご予約</li>
-          <li style="margin-bottom:8px;">・お誕生日・記念日などギフト用バルーンの制作</li>
-          <li style="margin-bottom:8px;">・贈る想いをヒアリングしたオーダーメイド対応</li>
+        <ul class="service-list">
+          <li>成人式・卒業式向けバルーンフラワーのご予約</li>
+          <li>お誕生日・記念日などギフト用バルーンの制作</li>
+          <li>贈る想いをヒアリングしたオーダーメイド対応</li>
         </ul>
-      </div>
+        <a class="text-link" href="https://hanaemon22.com/" target="_blank" rel="noopener">Hanaemon公式サイト</a>
+        </div>
+        <div class="service-brand-name" aria-hidden="true">HANA<br>EMON</div>
+      </article>
     </div>
   </section>
 
@@ -99,18 +100,17 @@
       <p class="kicker">Reservation</p>
       <h2>成人式・卒業式のご予約について</h2>
     </div>
-    <p style="max-width:70ch;">成人式・卒業式のアパレルグッズ、バルーンフラワーのご予約は、いつでも各ブランドの公式LINEからお気軽にメッセージをお送りください。ご希望のイメージや日程をお伺いした上で、ご提案・お見積りいたします。詳しい流れは<a href="flow.html" style="color:var(--color-teal-deep);font-weight:700;">「ご依頼の流れ」</a>を、料金の目安は<a href="price.html" style="color:var(--color-teal-deep);font-weight:700;">「料金」</a>ページをご覧ください。</p>
+    <p style="max-width:70ch;">成人式・卒業式のアパレルグッズ、バルーンフラワーについて、確認済みの電話窓口からご相談いただけます。ご希望のイメージや日程を伺ったうえで、ご提案・お見積りします。詳しい流れは<a href="flow.html" style="color:var(--color-teal-deep);font-weight:700;">「ご依頼の流れ」</a>を、料金のご案内は<a href="price.html" style="color:var(--color-teal-deep);font-weight:700;">「料金」</a>ページをご覧ください。</p>
   </section>
 
   <section class="contact-cta" id="contact">
     <div class="wrap">
       <p class="kicker" style="text-align:center;color:var(--color-teal);">Contact</p>
-      <h2>あなたの物語を、聞かせてください。</h2>
-      <p>成人式・卒業式のグッズやバルーンフラワーのご予約も、いつでも公式LINEからお気軽にどうぞ。</p>
+      <h2>まず、話すところから。</h2>
+      <p>成人式・卒業式のグッズやバルーンフラワーについて、確認済みの電話窓口からご相談いただけます。</p>
       <div class="contact-ctas">
-        <a class="btn btn-primary" href="#" rel="noopener">パンチパンダ公式LINE</a>
-        <a class="btn btn-primary" href="#" rel="noopener">Hanaemon公式LINE</a>
-        <a class="btn btn-outline-light" href="tel:09099977222">電話で相談する（090-9997-7222）</a>
+        <a class="btn btn-primary" href="tel:09099977222">電話で相談する（090-9997-7222）</a>
+        <p class="contact-url-status">各ブランドの公式LINE URLは現在確認中です。</p>
       </div>
     </div>
   </section>
@@ -120,12 +120,12 @@
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
-      <div class="footer-col">
-        <div class="footer-logo"><img src="images/logo.png" alt="" width="32" height="32">合同会社 FONT</div>
+      <div class="footer-col footer-identity">
+        <div class="footer-logo">合同会社 <strong>FONT</strong></div>
         <p>個性を纏うアパレルと、想いを贈るバルーンフラワー。ふたつのブランドで、あなたの物語を彩ります。</p>
       </div>
-      <div class="footer-col">
-        <h4>Menu</h4>
+      <div class="footer-col footer-menu">
+        <h4>Index</h4>
         <a href="about.html">会社概要</a>
         <a href="services.html">事業内容・サービス</a>
         <a href="works.html">実績・事例</a>
@@ -133,7 +133,7 @@
         <a href="flow.html">ご依頼の流れ</a>
         <a href="price.html">料金</a>
       </div>
-      <div class="footer-col">
+      <div class="footer-col footer-contact">
         <h4>Contact</h4>
         <p>〒612-8121<br>京都府京都市伏見区向島善阿弥町45-3<br>リバーサイド観月105</p>
         <a href="tel:09099977222">090-9997-7222</a>

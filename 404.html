@@ -9,21 +9,24 @@
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-not-found">
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="index.html"><img src="images/logo.png" alt="合同会社FONT" width="36" height="36">合同会社 FONT</a>
+    <a class="logo" href="index.html">合同会社 <strong>FONT</strong></a>
   </div>
 </header>
 <main id="main">
-  <section class="section wrap center" style="padding:var(--space-7) 0;">
-    <p class="kicker" style="justify-content:center;display:flex;">404</p>
-    <h1 style="font-size:var(--fs-xxl);font-weight:800;margin-bottom:var(--space-3);">ページが見つかりませんでした</h1>
-    <p style="max-width:50ch;margin:0 auto var(--space-4);">お探しのページは移動または削除された可能性があります。トップページから改めてお探しください。</p>
-    <a class="btn btn-primary" href="index.html">トップページへ戻る</a>
+  <section class="not-found wrap">
+    <p class="not-found-index" aria-hidden="true">404</p>
+    <div class="not-found-copy">
+      <p class="kicker">Page not found</p>
+      <h1>ページが見つかりませんでした</h1>
+      <p>お探しのページは移動または削除された可能性があります。トップページから改めてお探しください。</p>
+      <a class="btn btn-primary" href="index.html">トップページへ戻る</a>
+    </div>
   </section>
 </main>
 <footer class="site-footer">
