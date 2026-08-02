@@ -41,7 +41,19 @@
   if (!reduceMotion) document.documentElement.classList.add('motion-ready');
 
   const revealTargets = document.querySelectorAll(
-    '.page-home .section-head, .page-home .brand-story, .page-home .voice-preview-body, .page-home .contact-route'
+    [
+      '.section-head',
+      '.brand-story',
+      '.voice-preview-body',
+      '.contact-route',
+      '.service-brand',
+      '.work-feature',
+      '.work-directory',
+      '.flow-grid',
+      '.voice-holding',
+      '.about-story-copy',
+      '.info-table',
+    ].join(', ')
   );
 
   if (!reduceMotion && 'IntersectionObserver' in window && revealTargets.length) {
